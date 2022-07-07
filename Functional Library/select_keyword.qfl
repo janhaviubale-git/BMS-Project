@@ -1,0 +1,129 @@
+﻿
+
+Function executeTest(testCaseID)
+    Select Case testCaseID
+        Case "TC_001"
+            services.StartTransaction "TC_001"
+                     Environment.Value("Result")=Filter_TC001()
+            services.EndTransaction"TC_001"
+           
+          Case "TC_002"
+            services.StartTransaction "TC_002"
+                   Environment.Value("Result")=Filter_TC002()
+            services.EndTransaction"TC_002"
+            
+           Case "TC_003"
+            services.StartTransaction "TC_003"
+                     Environment.Value("Result")=Filter_TC003()
+            services.EndTransaction"TC_003"
+            
+             Case "Filter_TC004"
+            services.StartTransaction "TC004"
+                      Environment.Value("Result") = Filter_TC004()
+            services.EndTransaction"TC004"
+            
+            Case "Filter_TC005"
+            services.StartTransaction "TC005"
+                     Enviornment.Value("Result") = Filter_TC005()
+            services.EndTransaction"TC005"
+            
+             Case "Filter_TC006"
+            services.StartTransaction "TC006"
+                     Environment.Value("Result") = Filter_TC006()
+            services.EndTransaction "TC006"
+            
+              Case "Filter_TC007"
+            services.StartTransaction "TC007"
+                     Enviornment.Value("Result") = Filter_TC007()
+            services.EndTransaction "TC007"
+            
+             Case "Filter_TC008"
+            services.StartTransaction "TC008"
+                      Environment.Value("Result") = Filter_TC008()
+            services.EndTransaction "TC008"
+            
+             Case "Filter_TC009"
+            services.StartTransaction "TC009"
+                     Environment.Value("Result") = Filter_TC009()
+            services.EndTransaction "TC009"
+            
+             Case "Filter_TC0010"
+            services.StartTransaction "TC0010"
+                      Environment.Value("Result") = Filter_TC0010()
+            services.EndTransaction "TC0010"
+            
+    
+             Case "Filter_TC0011"
+            services.StartTransaction "TC0011"
+                     Environment.Value("Result") = Filter_TC0011()
+            services.EndTransaction "TC0011"
+            
+             Case "Filter_TC0012"
+            services.StartTransaction "TC0012"
+                     Environment.Value("Result") = Filter_TC0012()
+            services.EndTransaction "TC0012"
+            
+             Case "Filter_TC0013"
+            services.StartTransaction "TC0013"
+                     Environment.Value("Result") = Filter_TC0013()
+            services.EndTransaction "TC0013"
+            
+             Case "Filter_TC0014"
+            services.StartTransaction "TC0014"
+                     Environment.Value("Result") = Filter_TC0014()
+            services.EndTransaction "TC0014"
+            
+             Case "Filter_TC0015"
+            services.StartTransaction "TC0015"
+                     Environment.Value("Result") = Filter_TC0015()
+            services.EndTransaction "TC0015"
+            
+             Case "Filter_TC0016"
+            services.StartTransaction "TC0016"
+                     Environment.Value("Result") = Filter_TC0016()
+            services.EndTransaction "TC0016"
+             
+             Case "Filter_TC0017"
+            services.StartTransaction "TC0017"
+                     Environment.Value("Result") = Filter_TC0017()
+            services.EndTransaction "TC0017"
+            
+             Case "Filter_TC0012"
+            services.StartTransaction "TC0012"
+                     Environment.Value("Result") = Filter_TC0012()
+            services.EndTransaction "TC0012"
+            
+             Case "Filter_TC0018"
+            services.StartTransaction "TC0018"
+                     Environment.Value("Result") = Filter_TC0018()
+            services.EndTransaction "TC0018"
+                  
+             Case "Filter_TC0019"
+            services.StartTransaction "TC0019"
+                     Environment.Value("Result") = Filter_TC0019()
+            services.EndTransaction "TC0019"
+            
+            Case "Filter_TC0020"
+            services.StartTransaction "TC0020"
+                     Environment.Value("Result") = Filter_TC0020()
+            services.EndTransaction "TC0020"
+            
+            
+            
+    End Select
+    End  Function
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+  

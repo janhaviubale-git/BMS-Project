@@ -1,0 +1,82 @@
+﻿Function Filter_TC0011()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Movies").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Minions: The Rise of Gru").Check CheckPoint("Minions: The Rise of Gru_2")
+
+End Function
+
+Function  Filter_TC0012()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Movies").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Genres").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Family").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("JugJugg Jeeyo").Check CheckPoint("JugJugg Jeeyo_2")
+
+End Function
+
+Function Filter_TC0013()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Movies").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Genres").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Thriller").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Format").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("IMAX 3D").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Jurassic World: Dominion").Check CheckPoint("Jurassic World: Dominion_2")
+
+	
+End Function
+
+Function Filter_TC0014()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Events").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Events in").WebElement("TCC Bandra: Very Late").Check CheckPoint("TCC Bandra: Very Late Night Comedy_3")
+End Function
+
+Function Filter_TC0015()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Events").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Events in").WebElement("Categories").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Events in").WebElement("Music Shows").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Events in").WebElement("Evergreen Melodies Of").Check CheckPoint("Evergreen Melodies Of The Golden Era")
+End Function
+
+Function Filter_TC0016()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Movies").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Japanese").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Genres").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Action").Click
+Browser("bookmyshow - Google Search").Page("Mumbai Movie Tickets Online").WebElement("Jujutsu Kaisen 0").Check CheckPoint("Jujutsu Kaisen 0")
+
+End Function
+
+Function Filter_TC0017()
+Browser("bookmyshow - Google Search").Page("bookmyshow - Google Search").Link("BookMyShow: Movie Tickets,").Click
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Activities").Click
+Browser("bookmyshow - Google Search").Page("Things To Do In Mumbai").WebElement("Hamleys Play").Check CheckPoint("Hamleys Play")
+
+End Function
+
+Function Filter_TC0018()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Plays").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Plays in").WebElement("Bluffmaster Gujjubhai").Check CheckPoint("Bluffmaster Gujjubhai_2")
+
+End Function
+
+Function Filter_TC0019()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Plays").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Plays in").WebElement("Language").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Plays in").WebElement("Hindi").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Plays in").WebElement("Mahabharata - The Epic").Check CheckPoint("Mahabharata - The Epic Tale")
+
+End Function
+
+Function Filter_TC0020()
+Browser(browserObject).Navigate(url)
+Browser("bookmyshow - Google Search").Page("Movie Tickets, Plays,").Link("Sports").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Sports Events").WebElement("Categories").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Sports Events").WebElement("E Sports").Click
+Browser("bookmyshow - Google Search").Page("Top Upcoming Sports Events").WebElement("Call of Duty Mobile Tournament").Check CheckPoint("Call of Duty Mobile Tournament_3")
+End Function

@@ -1,0 +1,148 @@
+﻿
+Dim url ,searchString,resultString, res19,res20
+url = "https://bookmyshow.com/explore/home/mumbai"
+
+res1 = "Rocketry"
+res3=  "JugJugg Jeeyo"
+res5 = "Khuda Haafiz Chapter 2 - Agni Pariksha"
+res7 = "TCC Bandra: Very Late Night Comedy"
+res9 = "Evergreen Melodies Of The Golden Era"
+res11 = "Jujutsu Kaisen 0"
+res13 = "Hamleys Play"
+res15 = "Fats TheArts Shikhandi"
+res17 = "Mahabharata - The Epic Tale"
+res19  = "Call of Duty Mobile Tournament"
+
+
+
+Set browserObject = Description.Create
+browserObject("creationtime").value ="0"
+
+Set pageObject = Description.Create
+pageObject("micclass").value ="Page"
+
+Set signInObject = Description.Create
+signInObject ("innerhtml").value ="Sign in"
+
+Set CwgoogleObject = Description.Create
+CwgoogleObject ("xpath").value ="//DIV[normalize-space()='Continue with Google']/DIV[1]/DIV[1]" 
+
+
+'TC001
+Set MoviesObject = Description.Create
+ MoviesObject ("xpath").value ="//DIV/DIV/A[normalize-space()='Movies']"
+
+Set MissionsriseObject = Description.Create
+ MissionsriseObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/A[4]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+
+
+'TC002
+Set MoviesObject = Description.Create
+ MoviesObject ("innerhtml").value ="Movies"
+ 
+ Set GenresObject = Description.Create
+ GenresObject ("xpath").value ="//DIV/DIV/DIV[normalize-space()='Genres']"
+ 
+  Set FamilyObject = Description.Create
+ FamilyObject ("xpath").value ="//DIV/DIV[normalize-space()='Family']/DIV[1]/DIV[1]"
+ 
+  Set JugJuggJeeyoObject = Description.Create
+ JugJuggJeeyoObject ("xpath").value ="//DIV[normalize-space()='JugJugg Jeeyo']/DIV[1]"
+ 
+ 
+ 'TC003
+  Set MoviesObject = Description.Create
+ MoviesObject ("innerhtml").value ="Movies"
+ 
+  Set GenresObject = Description.Create
+ GenresObject ("xpath").value ="//DIV/DIV/DIV[normalize-space()='Genres']"
+ 
+  Set ThrillerObject = Description.Create
+ ThrillerObject ("xpath").value ="//DIV[normalize-space()='ThrillerThriller']/DIV[2]/DIV[1]/DIV[1]"
+ 
+  Set JurassicworldObject = Description.Create
+ JurassicworldObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/A[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+ 
+ 
+ 'TC004
+  Set EventObject = Description.Create
+ EventObject ("xpath").value ="//DIV/DIV/A[normalize-space()='Events']"
+ 
+   Set TccbandraverylateObject = Description.Create
+ TccbandraverylateObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[5]/DIV[1]/DIV[1]/DIV[2]/A[3]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+ 
+ 
+ 'TC005
+   Set EventObject = Description.Create
+ EventObject ("xpath").value ="//DIV/DIV/A[normalize-space()='Events']"
+ 
+  Set CategoryObject = Description.Create
+ CategoryObject ("xpath").value ="//DIV/DIV/DIV[normalize-space()='Categories']"
+ 
+  Set MovieshowsObject = Description.Create
+ MovieshowsObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[4]/DIV[2]/DIV[1]"
+ 
+ Set EvergreenmelodiesofgoldeneraObject = Description.Create
+ EvergreenmelodiesofgoldeneraObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/A[4]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+ 
+ 
+ 'TC006
+   Set MoviesObject = Description.Create
+ MoviesObject ("innerhtml").value ="Movies"
+ 
+  Set JapaneseObject = Description.Create
+ JapaneseObject ("xpath").value ="//DIV[normalize-space()='JapaneseJapanese']/DIV[2]/DIV[1]"
+ 
+   Set GenresObject = Description.Create
+ GenresObject ("xpath").value ="//DIV/DIV/DIV[normalize-space()='Genres']"
+ 
+  Set ActionObject = Description.Create
+ ActionObject("xpath").value ="//DIV/DIV[normalize-space()='Action']/DIV[1]/DIV[1]"
+ 
+ Set JujutsukaisenzeroObject = Description.Create
+ JujutsukaisenzeroObject ("xpath").value ="//DIV[normalize-space()='Jujutsu Kaisen 0']/DIV[1]"
+ 
+ 
+ 'TC007
+  Set ActivitiesObject = Description.Create
+ ActivitiesObject ("xpath").value ="//DIV[1]/DIV[1]/A[6]"
+ 
+  Set HamleysplayObject = Description.Create
+  HamleysplayObject("xpath").value ="//DIV[normalize-space()='Hamleys Play']/DIV[1]"
+ 
+ 
+ 'TC008
+ Set PlayObject = Description.Create
+ PlayObject ("xpath").value ="//DIV[1]/DIV[1]/A[4]"
+ 
+ Set BluffmasterObject = Description.Create
+ BluffmasterObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/A[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+   
+   
+   'TC009
+ Set PlayObject = Description.Create
+ PlayObject ("xpath").value ="//DIV[1]/DIV[1]/A[4]"
+
+ Set LanguageObject = Description.Create
+ LanguageObject ("xpath").value ="//DIV/DIV/DIV[normalize-space()='Language']"
+ 
+ Set HindiObject = Description.Create
+ HindiObject ("xpath").value ="//DIV[normalize-space()='HindiHindi']/DIV[2]/DIV[1]"
+
+  Set MahabharataObject = Description.Create
+ MahabharataObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/A[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+ 
+ 
+ 'TC0010
+   Set SportsObject = Description.Create
+ SportsObject ("xpath").value ="//DIV[1]/DIV[1]/A[5]"
+ 
+   Set CategoryObject = Description.Create
+ CategoryObject ("xpath").value ="//DIV/DIV/DIV[normalize-space()='Categories']"
+ 
+   Set EsportsObject = Description.Create
+ EsportsObject ("xpath").value ="//DIV[normalize-space()='E SportsE Sports']/DIV[2]/DIV[1]/DIV[1]"
+ 
+   Set CallofdutymobObject = Description.Create
+  CallofdutymobObject ("xpath").value ="//DIV[@id='super-container']/DIV[@role='main'][1]/DIV[4]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/A[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]"
+ 

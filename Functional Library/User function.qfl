@@ -1,0 +1,221 @@
+﻿Function Login()
+
+    Browser(browserObject).Navigate(url)
+    wait(3)
+    Browser(browserObject).Page(pageObject).WebElement(signInObject).Click
+    wait(3)
+    Browser(browserObject).Page(pageObject).WebElement(CwgoogleObject).Click
+    wait(3)
+    Browser(browserObject).Page(pageObject).Sync
+
+End  Function
+
+Function Filter_TC001()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(MoviesObject).Click
+res2=Browser(browserObject).Page(pageObject).WebElement(MissionsriseObject).GetROProperty("text")
+res1=DataTable.Value("Expected_Value","Test Data")
+If Strcomp(res1,res2)=0 Then
+           Reporter.ReportEvent micPass,"Rocketry","Pass"
+        Else
+           Reporter.ReportEvent micFail,"Rocketry","Fail"
+        End if
+
+ If Strcomp(res1,res2)=0 Then
+                   Filter_TC001="Pass"
+        Else
+                   Filter_TC001="Fail"
+        End if
+        
+Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+Function Filter_TC002()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(MoviesObject).Click
+Browser(browserObject).Page(pageObject).WebElement(GenresObject).Click
+Browser(browserObject).Page(pageObject).WebElement(FamilyObject).Click
+res4=Browser(browserObject).Page(pageObject).WebElement(JugJuggJeeyoObject).GetROProperty("text")
+res3=DataTable.Value("Expected_Value","Test Data")
+If Strcomp(res3,res4)=0 Then
+                 Reporter.ReportEvent micPass,"JugJugg Jeeyo","Pass"
+        Else
+                 Reporter.ReportEvent micFail,"JugJugg Jeeyo","Fail"
+        End if
+ If Strcomp(res3,res4)=0 Then
+                 Filter_TC002="Pass"
+        Else
+                 Filter_TC002="Fail"
+        End if
+
+Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+Function Filter_TC003()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(MoviesObject).Click
+Browser(browserObject).Page(pageObject).WebElement(GenresObject).Click
+Browser(browserObject).Page(pageObject).WebElement(ThrillerObject).Click
+res6=Browser(browserObject).Page(pageObject).WebElement(JurassicworldObject).GetROProperty("text")
+res5=DataTable.Value("Expected_Value","Test Data")
+If Strcomp(res5,res6)=0 Then
+              Reporter.ReportEvent micPass,"Khuda Haafiz Chapter 2 - Agni Pariksha" , "Pass"
+         Else
+             Reporter.ReportEvent micFail,"Khuda Haafiz Chapter 2 - Agni Pariksha" , "Fail"
+         End if
+
+If Strcomp(res5,res6)=0 Then
+            Filter_TC003="Pass"
+        Else
+            Filter_TC003="Fail"
+        End if	
+Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+Function Filter_TC004()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(EventObject).Click
+res8=Browser(browserObject).Page(pageObject).WebElement(TccbandraverylateObject).GetROProperty("text")
+res7=DataTable.Value("Expected_Value","Test Data")
+If Strcomp (res7,res8)=0 Then
+                 Reporter.ReportEvent micPass,"TCC Bandra: Very Late Night Comedy","Pass"
+        Else
+                 Reporter.ReportEvent micFail,"TCC Bandra: Very Late Night Comedy","Fail"
+        End if
+ If Strcomp(res7,res8)=0 Then
+                 Filter_TC004="Pass"
+        Else
+                 Filter_TC004="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"        
+End Function
+
+Function Filter_TC005()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(EventObject).Click
+Browser(browserObject).Page(pageObject).WebElement(CategoryObject).Click
+Browser(browserObject).Page(pageObject).WebElement(MovieshowsObject).Click
+res10=Browser(browserObject).Page(pageObject).WebElement(EvergreenmelodiesofgoldeneraObject).GetROProperty("text")
+res9=DataTable.Value("Expected_Value","Test Data")
+If Strcomp (res9,res10)=0 Then
+                Reporter.ReportEvent micPass,"Evergreen Melodies Of The Golden Era","Pass"
+        Else
+                 Reporter.ReportEvent micFail,"Evergreen Melodies Of The Golden Era","Fail"
+        End if
+ If Strcomp(res9,res10)=0 Then
+                 Filter_TC005="Pass"
+        Else
+                 Filter_TC005="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"     
+End Function
+
+Function Filter_TC006()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(MoviesObject).Click
+Browser(browserObject).Page(pageObject).WebElement(JapaneseObject).Click
+Browser(browserObject).Page(pageObject).WebElement(GenresObject).Click
+Browser(browserObject).Page(pageObject).WebElement(ActionObject).Click
+res12=Browser(browserObject).Page(pageObject).WebElement(JujutsukaisenzeroObject).GetROProperty("text")
+res11=DataTable.Value("Expected_Value","Test Data")
+If Strcomp (res11,res12) = 0 Then
+                 Reporter.ReportEvent micPass,"Jujutsu Kaisen 0","Pass"
+        Else
+                 Reporter.ReportEvent micFail,"Jujutsu Kaisen 0","Fail"
+        End if
+ If Strcomp(res11,res12)=0 Then
+                 Filter_TC006="Pass"
+        Else
+                 Filter_TC006="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"     
+End Function
+
+Function Filter_TC007()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(ActivitiesObject).Click
+res14=Browser(browserObject).Page(pageObject).WebElement(HamleysplayObject).GetROProperty("text")
+res13=DataTable.Value("Expected_Value","Test Data")
+If Strcomp(res13,res14)=0 Then
+                 Reporter.ReportEvent micPass,"Hamleys Play","Pass"
+        Else
+                 Reporter.ReportEvent micFail,"Hamleys Play","Fail"
+        End if
+ If Strcomp(res13,res14)=0 Then
+                 Filter_TC007="Pass"
+        Else
+                 Filter_TC007="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"    
+End Function
+
+Function Filter_TC008()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).Link(PlayObject).Click
+res16=Browser(browserObject).Page(pageObject).WebElement(BluffmasterObject).GetROProperty("text")
+res15=DataTable.Value("Expected_Value","Test Data")
+If Strcomp (res15,res16)=0 Then
+                Reporter.ReportEvent micPass,"Bluffmaster Gujjubhai","Pass"
+       Else
+                 Reporter.ReportEvent micFail,"Bluffmaster Gujjubhai","Fail"
+       End if
+ If Strcomp(res15,res16)=0 Then
+                 Filter_TC008="Pass"
+        Else
+                 Filter_TC008="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"    
+End Function
+
+Function  Filter_TC009()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))	
+Browser(browserObject).Page(pageObject).Link(PlayObject).Click
+Browser(browserObject).Page(pageObject).WebElement(LanguageObject).Click
+Browser(browserObject).Page(pageObject).WebElement(HindiObject).Click
+res18=Browser(browserObject).Page(pageObject).WebElement(MahabharataObject).GetROProperty("text")
+res17=DataTable.Value("Expected_Value","Test Data")
+If Strcomp (res17,res18)=0 Then
+               Reporter.ReportEvent micPass,"Mahabharata - The Epic","Pass"
+        Else
+                Reporter.ReportEvent micFail,"Mahabharata - The Epic","Fail"
+        End if
+ If Strcomp(res17,res18)=0 Then
+                 Filter_TC009="Pass"
+        Else
+                 Filter_TC009="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"    
+End Function
+
+Function Filter_TC0010()
+Systemutil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))	
+Browser(browserObject).Page(pageObject).Link(SportsObject).Click
+Browser(browserObject).Page(pageObject).WebElement(CategoryObject).Click
+Browser(browserObject).Page(pageObject).WebElement(EsportsObject).Click
+Res20=Browser(browserObject).Page(pageObject).WebElement(CallofdutymobObject).GetROProperty("text")
+res19=DataTable.Value("Expected_Value","Test Data")
+If Strcomp (res19,res20)=0 Then
+                 Reporter.ReportEvent micPass,"Call of Duty Mobile Tournament","Pass"
+       Else
+                 Reporter.ReportEvent micFail,"Call of Duty Mobile Tournament","Fail"
+        End if
+ If Strcomp(res19,res20)=0 Then
+                 Filter_TC0010="Pass"
+        Else
+                 Filter_TC0010="Fail"
+        End if
+Systemutil.CloseProcessByName"chrome.exe"    
+
+End Function
+
+
